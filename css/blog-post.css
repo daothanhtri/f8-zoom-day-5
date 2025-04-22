@@ -1,0 +1,114 @@
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin: auto;
+}
+
+.header {
+  margin-top: 3rem;
+}
+
+h1 {
+  text-align: justify;
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+}
+
+img {
+  width: 100%;
+  user-select: none;
+}
+
+.blog-author {
+  text-align: justify;
+}
+
+.author,
+.date-time {
+  display: inline-block;
+}
+
+.author {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.date-time {
+  font-size: 1.8rem;
+  color: #ccc;
+}
+
+.section {
+  text-align: justify;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #03276a;
+}
+
+p {
+  font-size: 2rem;
+  margin: 2rem 0;
+  line-height: 3rem;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  color: #7e7e7e;
+}
+
+p::first-letter {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+p::first-line {
+  color: #06795c;
+  font-weight: 500;
+}
+
+h1::selection,
+h2::selection,
+p::selection,
+blockquote::selection {
+  background-color: #f2ff00;
+  color: #000;
+}
+
+blockquote {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  line-height: 3rem;
+  font-style: italic;
+  color: #06795c;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 4.2rem;
+  font-weight: 900;
+}
+
+.copy-right {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: #a7a7a7;
+  padding: 2rem 3rem;
+  background-color: #000000;
+}
