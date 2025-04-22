@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    \
+    <link rel="stylesheet" href="./css/form.css" />
+    <title>Form Tương Tác</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register Form</h1>
+      <form action="" class="form" autocomplete="off" spellcheck="false">
+        <!-- INPUT FULLNAME -->
+        <div class="form-group required">
+          <label for="username" class="label">Full Name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <!-- INPUT EMAIL -->
+        <div class="form-group required">
+          <label for="useremail" class="label">Email</label>
+          <input
+            type="email"
+            name="useremail"
+            id="useremail"
+            class="input"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <!-- INPUT PASSWORD -->
+        <div class="form-group required">
+          <label for="password" class="label">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            class="input"
+            placeholder="Enter password"
+          />
+        </div>
+
+        <!-- INPUT CONFIRMPASSWORD -->
+        <div class="form-group required">
+          <label for="confirmpassword" class="label">Confirm Password</label>
+          <input
+            type="text"
+            name="confrimpassword"
+            id="confirmpassword"
+            class="input"
+            placeholder="Confirm password"
+          />
+        </div>
+
+        <!-- INPUT GENDER -->
+        <div class="form-group radio-group">
+          <label class="label">Gender</label>
+          <ul>
+            <li>
+              <label for="male">Male</label
+              ><input type="radio" name="gender" id="male" required />
+            </li>
+            <li>
+              <label for="female">Female</label
+              ><input type="radio" name="gender" id="female" required />
+            </li>
+            <li>
+              <label for="other">Other</label
+              ><input type="radio" name="gender" id="other" required />
+            </li>
+          </ul>
+        </div>
+
+        <!-- INPUT DATE OF BIRTH -->
+        <div class="form-group">
+          <label for="birth-date" class="label">Date of Birth</label>
+          <input type="date" name="birth-date" id="birth-date" class="input" />
+        </div>
+
+        <!-- INPUT ADDRESS -->
+        <div class="form-group">
+          <label for="address" class="label">Address</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            class="input"
+            placeholder="Enter your address"
+          />
+        </div>
+
+        <!-- INPUT AVATAR -->
+        <div class="form-group checkbox-group">
+          <label for="avatar-input" class="label">Profile Picture</label>
+          <label for="avatar-input" class="avatar-input"
+            ><img
+              class="img-avatar"
+              src="./img/img_avatar_placeholder.png"
+              alt=""
+          /></label>
+          <input
+            type="file"
+            name="avatar"
+            id="avatar-input"
+            class="avatar-input"
+            accept="image/*"
+            hidden
+          />
+        </div>
+
+        <!-- IMPUT COMMUNICATION PREFERENCES -->
+        <div class="form-group">
+          <label for="communication" class="label"
+            >Communication Preferences</label
+          >
+          <ul>
+            <li>
+              <label>Subscribe to Newsletter<input type="checkbox" /></label>
+            </li>
+            <li>
+              <label>Receive Promotional Emails<input type="checkbox" /></label>
+            </li>
+            <li>
+              <label>Get Product Updates<input type="checkbox" /></label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- BUTTON SUBMIT -->
+        <div class="form-group">
+          <button type="submit" class="btn">Accept</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
